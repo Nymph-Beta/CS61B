@@ -1,0 +1,170 @@
+{
+  "main": {
+    "id": "01e3401ae19d7a63",
+    "type": "split",
+    "children": [
+      {
+        "id": "41ae00104200508d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "07c0bd161ebb3589",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "aNote/2_Lists/2.1 Mystery of the Walrus.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c8dd0dd2c5f0f4d8",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "271156b8d02c5dd2",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "044e7e9cd4e0e3f9",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer",
+          "state": {
+            "sortOrder": "alphabetical"
+          }
+        }
+      },
+      {
+        "id": "c6c307ee2ff592c8",
+        "type": "leaf",
+        "state": {
+          "type": "search",
+          "state": {
+            "query": "",
+            "matchingCase": false,
+            "explainSearch": false,
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical"
+          }
+        }
+      },
+      {
+        "id": "96c16b060e2bc2cc",
+        "type": "leaf",
+        "state": {
+          "type": "tag",
+          "state": {
+            "sortOrder": "frequency",
+            "useHierarchy": true
+          }
+        }
+      },
+      {
+        "id": "cdc3c27ecbbe341f",
+        "type": "leaf",
+        "state": {
+          "type": "bookmarks",
+          "state": {}
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "right": {
+    "id": "614126990ee98951",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "2a0cdf0a631471d8",
+        "type": "leaf",
+        "state": {
+          "type": "backlink",
+          "state": {
+            "file": "aNote/2_Lists/2.1 Mystery of the Walrus.md",
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical",
+            "showSearch": false,
+            "searchQuery": "",
+            "backlinkCollapsed": false,
+            "unlinkedCollapsed": true
+          }
+        }
+      },
+      {
+        "id": "b486b2553b66e91d",
+        "type": "leaf",
+        "state": {
+          "type": "outgoing-link",
+          "state": {
+            "file": "aNote/2_Lists/2.1 Mystery of the Walrus.md",
+            "linksCollapsed": false,
+            "unlinkedCollapsed": true
+          }
+        }
+      },
+      {
+        "id": "ef6429685b39e3c8",
+        "type": "leaf",
+        "state": {
+          "type": "outline",
+          "state": {
+            "file": "aNote/2_Lists/2.1 Mystery of the Walrus.md"
+          }
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false
+    }
+  },
+  "active": "044e7e9cd4e0e3f9",
+  "lastOpenFiles": [
+    "aNote/1_Introduction_to_Java/1.2 Objects.md",
+    "aNote/2_Lists/2.1 Mystery of the Walrus.md",
+    "未命名.md",
+    "aNote/2_Lists",
+    "aNote/1_Introduction_to_Java/Lab 1 Leap Year.md",
+    "aNote/1_Introduction_to_Java/Lab 1.md",
+    "lab14/lab14lib",
+    "lab14",
+    "lab2setup",
+    "lab15",
+    "hw2/hw2",
+    "hw2",
+    "lab1/LeapYear.java",
+    "lab1",
+    "lab14/lab14lib/Generator.java",
+    "proj0/images/acorn3.gif",
+    "proj0/images/endor.gif",
+    "proj0/images/ball.gif",
+    "proj0/images/kevin.gif",
+    "proj0/images/venus.gif",
+    "proj0/images/saturn.gif",
+    "proj0/images/death_star.gif",
+    "proj0/images/mercury.gif",
+    "proj0/images/star_destroyer.gif",
+    "proj0/images/star.gif"
+  ]
+}
