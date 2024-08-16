@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2_Lists/2.1 Mystery of the Walrus.md",
+                "file": "2_Lists/2.2 The SLList.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2_Lists/2.1 Mystery of the Walrus.md",
+                "file": "2_Lists/2.2 The SLList.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2_Lists/2.1 Mystery of the Walrus.md",
+                "file": "2_Lists/2.2 The SLList.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2_Lists/2.1 Mystery of the Walrus.md"
+                "file": "2_Lists/2.2 The SLList.md"
               }
             }
           }
@@ -149,13 +149,26 @@
   },
   "active": "28c12dfd921d593b",
   "lastOpenFiles": [
-    "2_Lists/2.2 The SLList.md",
-    "未命名.md",
-    "2_Lists/2.1 Mystery of the Walrus.md",
-    "Pasted image 20240417223946.png",
+    "Pasted image 20240815201629.png",
+    "Pasted image 20240815201650.png",
+    "Pasted image 20240815201600.png",
     "1_Introduction_to_Java/Lab 1 Leap Year.md",
-    "Pasted image 20240417223956.png",
+    "2_Lists/2.2 The SLList.md",
+    "2_Lists/Exc/SLList.class",
+    "2_Lists/Exc/SLList$IntNode.class",
+    "2_Lists/Exc/SLList.java",
+    "2_Lists/Exc/Government.java",
+    "2_Lists/Exc/Government.class",
+    "2_Lists/Exc/Government$Thief.class",
+    "2_Lists/Exc/Government$Peasant.class",
+    "2_Lists/Exc/Government$Mayor.class",
+    "2_Lists/Exc/Government$King.class",
+    "2_Lists/Exc/Government$Explorer.class",
+    "2_Lists/2.1 Mystery of the Walrus.md",
     "1_Introduction_to_Java/1.2 Objects.md",
+    "未命名.md",
+    "Pasted image 20240417223946.png",
+    "Pasted image 20240417223956.png",
     "1_Introduction_to_Java/Lab 1.md",
     "Pasted image 20240317225718.png",
     "Pasted image 20240317224833.png",
@@ -165,9 +178,6 @@
     "2024-03-17.md",
     "Pasted image 20240317235254.png",
     "Pasted image 20240317234630.png",
-    "Pasted image 20240317233840.png",
-    "Pasted image 20240317232556.png",
-    "Pasted image 20240317231635.png",
     "查找/53.I 数字在排序数组中出现的次数.md",
     "查找/53.II排序数组中缺少的数字.md"
   ]
