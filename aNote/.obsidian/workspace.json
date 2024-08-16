@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2_Lists/2.2 The SLList.md",
+                "file": "2_Lists/2.3  DLList.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2_Lists/2.2 The SLList.md",
+                "file": "2_Lists/2.3  DLList.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2_Lists/2.2 The SLList.md",
+                "file": "2_Lists/2.3  DLList.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2_Lists/2.2 The SLList.md"
+                "file": "2_Lists/2.3  DLList.md"
               }
             }
           }
@@ -149,11 +149,13 @@
   },
   "active": "28c12dfd921d593b",
   "lastOpenFiles": [
+    "2_Lists/2.1 Mystery of the Walrus.md",
+    "2_Lists/2.3  DLList.md",
+    "2_Lists/2.2 The SLList.md",
     "Pasted image 20240815201629.png",
     "Pasted image 20240815201650.png",
     "Pasted image 20240815201600.png",
     "1_Introduction_to_Java/Lab 1 Leap Year.md",
-    "2_Lists/2.2 The SLList.md",
     "2_Lists/Exc/SLList.class",
     "2_Lists/Exc/SLList$IntNode.class",
     "2_Lists/Exc/SLList.java",
@@ -164,7 +166,6 @@
     "2_Lists/Exc/Government$Mayor.class",
     "2_Lists/Exc/Government$King.class",
     "2_Lists/Exc/Government$Explorer.class",
-    "2_Lists/2.1 Mystery of the Walrus.md",
     "1_Introduction_to_Java/1.2 Objects.md",
     "未命名.md",
     "Pasted image 20240417223946.png",
