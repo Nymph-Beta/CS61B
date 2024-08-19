@@ -49,6 +49,7 @@ public class NBody {
                 planets[i].update(dt, xForces[i], yForces[i]);
             }
             StdDraw.picture(0, 0, "images/starfield.jpg");
+            // System.out.println("start drawing");
             for (Planet p : planets){
                 p.draw();
             }
