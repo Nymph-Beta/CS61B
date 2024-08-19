@@ -1,3 +1,4 @@
+package examples;
 /******************************************************************************
  *  Compilation:  javac StdRandom.java
  *  Execution:    java StdRandom

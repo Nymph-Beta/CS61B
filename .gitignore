@@ -1,0 +1,11 @@
+# Ignore everything
+*
+
+# But not these files...
+!*.md
+!*.java
+!*.txt
+!*.json
+
+# Ignore any other files in subdirectories
+!*/

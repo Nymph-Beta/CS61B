@@ -32,7 +32,7 @@ public class SLList {
     /** fixed addLast     */
     public void addLast(int x){
         if (first == null){
-            first = new IntNode(x, first, first);
+            first = new IntNode(x, null);
         }else{
             IntNode p = first;
             while(p.next != null){
