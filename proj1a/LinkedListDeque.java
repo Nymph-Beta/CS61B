@@ -10,9 +10,9 @@ public class LinkedListDeque<T> {
      */
 //    private static class IntNode{
     private static class Node<T> {
-        public Node<T>  prev;
-        public Node<T>  next;
-        public T item;
+        private Node<T>  prev;
+        private Node<T>  next;
+        private T item;
 
         //    public IntNode(IntNode p, int i, IntNode n){
         public Node(Node<T> p, T i, Node<T> n) {
@@ -29,6 +29,7 @@ public class LinkedListDeque<T> {
      * 创建一个包含单个元素的双端队列。
      * @param x 要添加的初始元素。
      */
+    /*
     public LinkedListDeque(T x){
         sentinel = new Node<>(null,null ,null);
         sentinel.prev = sentinel;
@@ -39,11 +40,12 @@ public class LinkedListDeque<T> {
         sentinel.prev = newNode;
         size = 1;
     }
+     */
 
     /**
      * 创建一个空的双端队列。
      */
-    public LinkedListDeque(){
+    public LinkedListDeque() {
         sentinel = new Node<>(null, null, null);
         sentinel.next = sentinel;
         sentinel.prev = sentinel;
@@ -54,8 +56,8 @@ public class LinkedListDeque<T> {
      * 在队列前端添加一个元素。
      * @param x 要添加的元素。
      */
-    public void addFirst(T x){
-        Node<T> newNode = new Node<>(sentinel,x,sentinel.next);
+    public void addFirst(T x) {
+        Node<T> newNode = new Node<>(sentinel, x, sentinel.next);
         sentinel.next.prev = newNode;
         sentinel.next = newNode;
         size++;
@@ -65,14 +67,14 @@ public class LinkedListDeque<T> {
      * 在队列后端添加一个元素。
      * @param x 要添加的元素。
      */
-    public void addLast(T x){
+    public void addLast(T x) {
         Node<T> newnode = new Node<>(sentinel.prev, x, sentinel);
         sentinel.prev.next = newnode;
         sentinel.prev = newnode;
         size++;
     }
 
-    public boolean isEmpty(){
+    public boolean isEmpty() {
         return size == 0;
     }
 
@@ -80,9 +82,9 @@ public class LinkedListDeque<T> {
      * 打印队列中的所有元素，从头到尾，以空格分隔。
      * 打印完所有元素后换行。
      */
-    public void printDeque(){
+    public void printDeque() {
         Node<T> cur = sentinel.next;
-        while(cur != sentinel){
+        while (cur != sentinel){
             System.out.print(cur.item + " ");
             cur = cur.next;
         }
@@ -93,9 +95,9 @@ public class LinkedListDeque<T> {
      * 移除并返回双端队列前端的元素。
      * 若不存在该元素，则返回 null。
      */
-    public T removeFirst(){
+    public T removeFirst() {
         Node<T> cur = sentinel.next;
-        if(cur == sentinel){
+        if (cur == sentinel) {
             return null;
         }
         sentinel.next = cur.next;
@@ -108,9 +110,9 @@ public class LinkedListDeque<T> {
      * 移除并返回双端队列末端的元素。
      * 若不存在该元素，则返回 null。
      */
-    public T removeLast(){
+    public T removeLast() {
         Node<T> cur = sentinel.prev;
-        if(cur == sentinel){
+        if (cur == sentinel) {
             return null;
         }
 //        sentinel.prev = cur.prev.next;
@@ -124,12 +126,12 @@ public class LinkedListDeque<T> {
      * Gets the item at the given index, where 0 is the front, 1 is the next item, and so forth.
      * If no such item exists, returns null. Must not alter the deque
      */
-    public T get(int index){
+    public T get(int index) {
         Node<T> cur = sentinel.next;
-        if(index < 0 || index >= size){
+        if (index < 0 || index >= size) {
             return null;
         }
-        for(int i = 0; i < index; i++){
+        for (int i = 0; i < index; i++) {
             cur = cur.next;
         }
         return cur.item;
@@ -140,8 +142,8 @@ public class LinkedListDeque<T> {
      * @param index
      * @return
      */
-    public T getRecursive(int index){
-        if(index < 0 || index >= size){
+    public T getRecursive(int index) {
+        if (index < 0 || index >= size) {
             return null;
         }
         return getRecursiveHelper(sentinel.next, index);
@@ -153,12 +155,14 @@ public class LinkedListDeque<T> {
      * @param index
      * @return
      */
-    private T getRecursiveHelper(Node<T> cur, int index){
-        if(index == 0) return cur.item;
-        return getRecursiveHelper(cur.next, index-1);
+    private T getRecursiveHelper(Node<T> cur, int index) {
+        if (index == 0) {
+            return cur.item;
+        }
+        return getRecursiveHelper(cur.next, index - 1);
     }
 
-    public int size(){
+    public int size() {
         return size;
     }
 
@@ -169,6 +173,7 @@ public class LinkedListDeque<T> {
      * if you change other, the new ArrayDeque you created should not change as well.
      * @param other
      */
+    /*
     public LinkedListDeque(LinkedListDeque<T> other){
         sentinel = new Node<>(null,null,null);
         sentinel.next = sentinel;
@@ -179,6 +184,16 @@ public class LinkedListDeque<T> {
         while(p != other.sentinel){
             this.addLast(p.item);
             p = p.next;
+        }
+    }
+     */
+    public LinkedListDeque(LinkedListDeque other) {
+        sentinel = new Node<>(null,null,null);
+        sentinel.next = sentinel;
+        sentinel.prev = sentinel;
+        size = 0;
+        for(int i = 0; i < other.size(); i++) {
+            addLast((T) other.get(i));
         }
     }
 }

@@ -21,7 +21,7 @@ public class ArrayDeque<T> {
      * @param index
      * @return
      */
-    private int getNext(int index){
+    private int getNext(int index) {
         return (index + 1) % items.length;
     }
 
@@ -30,15 +30,15 @@ public class ArrayDeque<T> {
      * @param index
      * @return
      */
-    private int getPrev(int index){
-        return(index - 1 + items.length) % items.length;
+    private int getPrev(int index) {
+        return (index - 1 + items.length) % items.length;
     }
 
     /**
      *
      * @param capacity
      */
-    private void resize(int capacity){
+    private void resize(int capacity) {
         T[] newitems = (T[]) new Object[capacity];
 
 //        int cur = head;
@@ -49,7 +49,7 @@ public class ArrayDeque<T> {
 //
 //        head = 0;
 //        tail = size;
-        if(head <  tail){
+        if (head < tail) {
             System.arraycopy(items, head, newitems, 0, size);
         } else if (size > 0) {
             int rightpartLength = items.length - head;
@@ -76,7 +76,7 @@ public class ArrayDeque<T> {
         }
     }
 
-    public void addFirst(T item){
+    public void addFirst(T item) {
 //        if(size == items.length){
 //            resize(items.length * RESIZE_FACTOR);
 //        }
@@ -89,7 +89,7 @@ public class ArrayDeque<T> {
         size++;
     }
 
-    public void addLast(T item){
+    public void addLast(T item) {
 //        if(size == items.length){
 //            resize(items.length * RESIZE_FACTOR);
 //        }
@@ -102,8 +102,8 @@ public class ArrayDeque<T> {
         size++;
     }
 
-    public T removeFirst(){
-        if(size == 0){
+    public T removeFirst() {
+        if (size == 0) {
             return null;
         }
         T item = items[head];
@@ -119,8 +119,8 @@ public class ArrayDeque<T> {
         return item;
     }
 
-    public T removeLast(){
-        if(size == 0){
+    public T removeLast() {
+        if (size == 0) {
             return null;
         }
 
@@ -137,8 +137,8 @@ public class ArrayDeque<T> {
         return item;
     }
 
-    public T get(int index){
-        if(index < 0 || index >= size){
+    public T get(int index) {
+        if (index < 0 || index >= size) {
             return null;
         }
 
@@ -147,22 +147,23 @@ public class ArrayDeque<T> {
         return items[physicalIndex];
     }
 
-    public int size(){
+    public int size() {
         return size;
     }
 
-    public boolean isEmpty(){
+    public boolean isEmpty() {
         return size == 0;
     }
 
-    public void printDeque(){
-        for(int i = 0; i < size; i++){
+    public void printDeque() {
+        for (int i = 0; i < size; i++) {
             System.out.print(get(i) + " ");
         }
 
         System.out.println();
     }
 
+    /*
     public ArrayDeque(ArrayDeque<T> other){
         int capacity = Math.max(INITIAL_CAPACITY, other.size);
 
@@ -181,6 +182,15 @@ public class ArrayDeque<T> {
         }
         head = 0;
         tail = size;
+    }
+     */
+    public ArrayDeque(ArrayDeque other) {
+        items = (T[]) new Object[other.size()];
+        size = 0;
+
+        for(int i = 0; i < other.size(); i++) {
+            addLast((T)other.get(i));
+        }
     }
 }
 
