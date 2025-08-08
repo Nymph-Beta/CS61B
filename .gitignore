@@ -9,3 +9,9 @@
 
 # Ignore any other files in subdirectories
 !*/
+
+# -------- 新增：强制忽略 IDE & build 产物 --------
+.idea/
+out/
+*.iml
+*.class.specstory/
