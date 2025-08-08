@@ -2,15 +2,19 @@
  * Created by jug on 1/22/18.
  */
 public class DebugExercise3 {
-    public static int countTurnips(In in) {
-        int totalTurnips = 0;
+//    public static int countTurnips(In in) {
+    public static long countTurnips(In in) {
+//        int totalTurnips = 0;
+//        Integer Overflow Integer.MIN_VALUE (-2,147,483,648) Integer.MAX_VALUE (2,147,483,647)
+        long totalTurnips = 0;
         while (!in.isEmpty()) {
             String vendor = in.readString();
             String foodType = in.readString();
             double cost = in.readDouble();
             int numAvailable = in.readInt();
             if (foodType.equals("turnip")) {
-                int newTotal = totalTurnips + numAvailable;
+//                int newTotal = totalTurnips + numAvailable;
+                long newTotal = totalTurnips + numAvailable;
                 totalTurnips = newTotal;
             }
             in.readLine();
