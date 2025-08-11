@@ -20,19 +20,16 @@ public class TestPalindrome {
     @Test
     public void testisPalindrome() {
         // --- 测试非回文词 ---
-        assertFalse("'cat' is not a palindrome", palindrome.isPalindrome("cat"));
-        assertFalse("'horse' is not a palindrome", palindrome.isPalindrome("horse"));
-
+        assertFalse("isPalindrome('cat')", palindrome.isPalindrome("cat"));
+        assertFalse("isPalindrome('horse')", palindrome.isPalindrome("horse"));
         // --- 测试回文词 ---
-        assertTrue("'racecar' is a palindrome", palindrome.isPalindrome("racecar")); // 奇数长度
-        assertTrue("'noon' is a palindrome", palindrome.isPalindrome("noon"));       // 偶数长度
-
+        assertTrue("isPalindrome('racecar')", palindrome.isPalindrome("racecar"));
+        assertTrue("isPalindrome('noon')", palindrome.isPalindrome("noon"));
         // --- 测试边界情况 (Edge Cases) ---
-        assertTrue("An empty string should be considered a palindrome", palindrome.isPalindrome(""));
-        assertTrue("A single character string should be a palindrome", palindrome.isPalindrome("a"));
-
+        assertTrue("Empty string is a palindrome", palindrome.isPalindrome(""));
+        assertTrue("Single char is a palindrome", palindrome.isPalindrome("a"));
         // --- 测试大小写敏感性 ---
-        assertFalse("'Racecar' should not be a palindrome due to case sensitivity", palindrome.isPalindrome("Racecar"));
+        assertFalse("Case-sensitive check for 'Racecar'", palindrome.isPalindrome("Racecar"));
     }
 
     @Test

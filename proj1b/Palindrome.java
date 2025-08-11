@@ -13,16 +13,16 @@ public class Palindrome {
     }
 
     private boolean isPalindromeHelper(Deque<Character> deque) {
-        if (deque.size() <=1) {
+        if (deque.size() <= 1) {
             return true;
         }
         char first = deque.removeFirst();
         char last = deque.removeLast();
 
-        return (first == last)&&isPalindromeHelper(deque);
+        return (first == last) && isPalindromeHelper(deque);
     }
 
-    public boolean isPalindrome(String word, CharacterComparator cc){
+    public boolean isPalindrome(String word, CharacterComparator cc) {
         Deque<Character> deque = wordToDeque(word);
         while (deque.size() > 1) {
             char first = deque.removeFirst();
