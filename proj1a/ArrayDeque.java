@@ -203,7 +203,8 @@ public class ArrayDeque<T> {
 
 
     /**
-     * Creates a deep copy of other。This constructor is implemented as per the project specification.
+     * Creates a deep copy of other。
+     * This constructor is implemented as per the project specification.
      *
      * NOTE: The autograder for this submission phase reports that this constructor
      * should be removed". It is temporarily commented out to pass the API check.
