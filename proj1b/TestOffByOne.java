@@ -19,6 +19,18 @@ public class TestOffByOne {
         assertFalse(offByOne.equalChars('a', 'e'));
         assertFalse(offByOne.equalChars('z', 'a'));
         assertFalse(offByOne.equalChars('a', 'a'));
+
+        // 测试大写字母之间
+        assertTrue(offByOne.equalChars('A', 'B'));
+        assertTrue(offByOne.equalChars('Z', 'Y'));
+
+        // 测试小写和大写字母之间（这些应该返回false，因为差值是32）
+        assertFalse(offByOne.equalChars('a', 'A'));
+        assertFalse(offByOne.equalChars('b', 'B'));
+
+        // 测试边界符号
+        assertTrue(offByOne.equalChars('Z', '['));
+        assertTrue(offByOne.equalChars('z', '{'));
     }
 
 }
